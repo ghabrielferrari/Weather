@@ -99,6 +99,7 @@
         android:text="Max : 00:00 °C"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weather" />
@@ -111,6 +112,7 @@
         android:text="Min : 00:00 °C"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/maxTemp"
         app:layout_constraintStart_toStartOf="@+id/maxTemp"
         app:layout_constraintTop_toBottomOf="@+id/maxTemp" />

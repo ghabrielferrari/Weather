@@ -80,13 +80,13 @@ class MainActivity : AppCompatActivity() {
                     val sunset = responseBody.sys.sunset.toLong()
                     val sea = responseBody.main.pressure
                     val condition = responseBody.weather.firstOrNull()?.main ?: "unknown"
-                    val maxTemp = responseBody.main.temp_max
-                    val minTemp = responseBody.main.temp_min
+                    val maxTemp = responseBody.main.temp_max // API item not working
+                    val minTemp = responseBody.main.temp_min // API item not working
 
                     binding.temp.text = "$temperature °C"
                     binding.weather.text = condition
-                    binding.maxTemp.text = "Max Temp: $maxTemp °C"
-                    binding.minTemp.text = "Min Temp: $minTemp °C"
+                    binding.maxTemp.text = "Max Temp: $maxTemp °C" // API item not working
+                    binding.minTemp.text = "Min Temp: $minTemp °C" // API item not working
                     binding.humidity.text = "$humidity %"
                     binding.windSpeed.text = "$windSpeed m/s"
                     binding.sunrise.text = "${time(sunrise)}"
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                     binding.condition.text = condition
                     binding.day.text = dayName(System.currentTimeMillis())
                     binding.date.text = date()
-                    binding.cityName.text = "$cityName"
+                    binding.cityName.text = "${cityName.capitalize()}"
 
                     changeImagesWeatherCondition(condition)
                 } else {
