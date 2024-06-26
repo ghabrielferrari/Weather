@@ -17,7 +17,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/searchviewshape"
         android:iconifiedByDefault="false"
-        android:queryHint="Search For A City"
+        android:queryHint="Search For A Place"
         android:searchIcon="@drawable/search"
         app:layout_constraintBottom_toTopOf="@+id/cityName"
         app:layout_constraintEnd_toEndOf="parent"
